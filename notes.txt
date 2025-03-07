@@ -1,3 +1,8 @@
 S2 :
 jdatetime ra nasb mikonid va
 ba estefade az an tabdil tarikh mikonid
+
+S4 :
+barname nevisi taabe gara
+taabe bazgashti
+decorator dar python
