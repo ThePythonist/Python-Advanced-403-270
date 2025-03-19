@@ -6,3 +6,7 @@ S4 :
 barname nevisi taabe gara
 taabe bazgashti
 decorator dar python
+
+S7 :
+class attribute
+instance attribute
