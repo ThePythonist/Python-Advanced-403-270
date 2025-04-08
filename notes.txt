@@ -10,3 +10,7 @@ decorator dar python
 S7 :
 class attribute
 instance attribute
+
+S9 :
+4 oop principles
+inheritance
