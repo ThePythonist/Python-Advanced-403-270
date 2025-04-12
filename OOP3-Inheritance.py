@@ -8,17 +8,21 @@
 #         print("Goodbye")
 #
 #
-# valed = A()
-# farzand = B()
+# class C(B):
+#     pass
 #
-# farzand.sayhello()
+#
+# parent = A()
+# child = B()
+# grandchild = C()
+# child.sayhello()
+# grandchild.saygoodbye()
 
 # ----------------------------------------------------------------------------------------------------------------------
 
-# class Father:
-#     def __init__(self, familyname, address, city, job):
-#         self.familyname = familyname
-#         self.address = address
+# class Parent:
+#     def __init__(self, name, city, job):
+#         self.name = name
 #         self.city = city
 #         self.job = job
 #
@@ -26,43 +30,40 @@
 #         print("Hello")
 #
 #
-# class Child(Father):
-#     def __init__(self, familyname, address, city, university, fieldofstudy, job=None):
-#         # --- Inherited ---
-#         super().__init__(familyname, address, city, job)
-#
-#         # --- Not Inherited ---
+# class Child(Parent):
+#     def __init__(self, name, university, field, job=None, city=None):
+#         super().__init__(name, city, job)
 #         self.uni = university
-#         self.field = fieldofstudy
+#         self.field = field
 #
 #     def saygoodbye(self):
 #         print("Goodbye")
 #
 #
-# ahmad = Father("Hosseini", "Ekbatan,Varzesh St", "Tehran", "Salesman")
-# ramin = Child("Hosseini", "Ekbatan,Varzesh St", "Tehran", "Sharif University", "Computer Engineering", "Programmer")
-#
-# print(ramin.job)
+# # valed = Parent("asghar", "yazd", "teacher")
+# farzand = Child(university="sharif", name="farid", field="computer")
+# print(farzand.city)
+
 
 # ----------------------------------------------------------------------------------------------------------------------
 
 # Without Inheritance
 
-class Pedar:
-    def __init__(self, fname):
-        self.familyname = fname
-
-    def greeting(self):
-        print("hello")
-
-
-class Farzand:
-    def __init__(self):
-        self.pedar = Pedar(input("Familyname : "))
-
-    def say_goodbye(self):
-        print("goodbye")
-
-
-pesar = Farzand()
-print(pesar.pedar.familyname)
+# class Pedar:
+#     def __init__(self, fname):
+#         self.familyname = fname
+#
+#     def greeting(self):
+#         print("hello")
+#
+#
+# class Farzand:
+#     def __init__(self):
+#         self.pedar = Pedar(input("Familyname : "))
+#
+#     def say_goodbye(self):
+#         print("goodbye")
+#
+#
+# pesar = Farzand()
+# print(pesar.pedar.familyname)
