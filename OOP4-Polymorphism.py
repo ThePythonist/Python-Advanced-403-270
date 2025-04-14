@@ -24,7 +24,7 @@ jimmy = Cat()
 taylor = Cow()
 
 # Call the make_sound function with different animal objects
-make_sound(jimmy)
+make_sound(taylor)
 
 # # -----------------------------------------------------------------------
 #

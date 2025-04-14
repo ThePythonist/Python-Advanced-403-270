@@ -14,3 +14,7 @@ instance attribute
 S9 :
 4 oop principles
 inheritance
+
+S11 :
+What is sql and sql commands : CREATE TABLE, INSERT, SELECT, UPDATE, DELETE, ALTER TABLE
+Create your ERD
