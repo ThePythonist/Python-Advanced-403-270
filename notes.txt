@@ -18,3 +18,7 @@ inheritance
 S11 :
 What is sql and sql commands : CREATE TABLE, INSERT, SELECT, UPDATE, DELETE, ALTER TABLE
 Create your ERD
+
+S12 :
+What is CRUD in database
+What is ORM
