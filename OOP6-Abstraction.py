@@ -39,11 +39,11 @@ class Circle(Shape):
 
 # Creating instances of the shapes
 
-# rectangle = Rectangle(5, 10)
-# circle = Circle(7)
-#
-# # Using the abstraction to calculate area and perimeter
-#
+rectangle = Rectangle(5, 10)
+circle = Circle(7)
+
+# Using the abstraction to calculate area and perimeter
+
 # print("Rectangle Area:", rectangle.area())  # Output: 50
 # print("Rectangle Perimeter:", rectangle.perimeter())  # Output: 30
 #
