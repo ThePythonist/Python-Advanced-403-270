@@ -17,8 +17,25 @@ def create_table():
 
 
 def insert_record():
-    pass
+    conn = sqlite3.connect("tables.db")
+    cur = conn.cursor()
+    table_name = input("Enter table name : ")
 
+    query = f"SELECT * FROM {table_name};"
+    cur.execute(query)
+    columns = [i[0] for i in cur.description]
+    values = []
+
+    for i in columns:
+        values.append(input(f"Enter {i} : "))
+
+    query = f"INSERT INTO {table_name} VALUES {tuple(values)};"
+    cur.execute(query)
+
+    print("Inserted into movies")
+
+    conn.commit()
+    conn.close()
 
 def select_table():
     conn = sqlite3.connect("tables.db")
