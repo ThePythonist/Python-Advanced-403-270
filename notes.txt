@@ -22,3 +22,8 @@ Create your ERD
 S12 :
 What is CRUD in database
 What is ORM
+
+
+S16 :
+Whats XML ?
+Whats the difference between XML and JSON
