@@ -27,3 +27,7 @@ What is ORM
 S16 :
 Whats XML ?
 Whats the difference between XML and JSON
+
+S19 :
+UI (User Interface)
+HTML - CSS
