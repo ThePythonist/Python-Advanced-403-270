@@ -1,3 +1,4 @@
+# Phase 1 : Defining data
 students = [
     {"name": "sara", "age": 20, "university": "amirkabir"},
     {"name": "taha", "age": 21, "university": "tehran markaz"},
@@ -5,6 +6,7 @@ students = [
     {"name": "mohsen", "age": 26, "university": "elm va sanaat"},
 ]
 
+# Phase 2 : Defining the base template
 html = """
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +15,9 @@ html = """
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>People Info Table</title>
     <style>
+        body {
+            font-family:Consolas;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
@@ -43,18 +48,24 @@ html = """
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>John Doe</td>
-                <td>Software Engineer</td>
-                <td>New York</td>
-            </tr>
 """
 
-# INJA FOR BEZANID
+# Phase 3 : Inserting data into table
+for i in students:
+    html += f"""
+        <tr>
+            <td>{i['name']}</td>
+            <td>{i['age']}</td>
+            <td>{i['university']}</td>
+        </tr>
+    """
 
+# Phase 4 : Finalizing the template
 html += """
         </tbody>
     </table>
 </body>
 </html>
 """
+
+open("info.html", "w").write(html)

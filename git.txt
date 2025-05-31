@@ -1,0 +1,6 @@
+git init : ijad repository git
+git status : vaziat repository git
+git add -A : stage kardan tamami file ha baraye sabt
+git commit -m 'tozihat' : sabt taghirat va ijad yek version
+git config --global user.name "esm" : ehraz hoviat
+git config --global user.email "email" : ehraz hoviat

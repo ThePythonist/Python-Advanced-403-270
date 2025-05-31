@@ -31,3 +31,7 @@ Whats the difference between XML and JSON
 S19 :
 UI (User Interface)
 HTML - CSS
+
+S22 :
+Github account
+TKINTER
